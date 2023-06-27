@@ -64,6 +64,7 @@ public class ClientService {
             throw new RuntimeException(e);
         }
     }
+
     public void setName(long id, String name) {
         nameValidator(name);
         try {
@@ -77,6 +78,7 @@ public class ClientService {
             throw new RuntimeException(e);
         }
     }
+
     public void deleteById(long id) {
         try {
             deleteClient.setLong(1, id);
